@@ -4,7 +4,8 @@ $(function(){
     '#488abe',
     '#018ec3',
     '#03393b',
-    '#f0f7fd'
+    '#f0f7fd',
+    '#018ec3'
   );
 
   $('.header-banner').slidesjs({
