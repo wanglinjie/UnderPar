@@ -4,6 +4,42 @@
   <title>Test</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" type="text/css" href="static/css/main.css">
+  <style type="text/css">
+  .page_wrapper .content-wrapper .content .content-row1 {
+    height: 400px 
+  }
+  </style>
+  <script type="text/javascript">
+  function iealert()
+  {
+    if (support === "ie8") {      // shows the alert msg in IE8, IE7, IE6
+      if ($.browser.msie  && parseInt($.browser.version, 10) < 9) {
+        $obj.prepend(iepanel);
+        $obj.prepend(overlay);
+      }
+      if ($.browser.msie  && parseInt($.browser.version, 10) === 6) {
+        $("#ie-alert-panel").css("background-position","-626px -116px");
+        $obj.css("margin","0");
+      }
+      } else if (support === "ie7") {   // shows the alert msg in IE7, IE6
+        if ($.browser.msie  && parseInt($.browser.version, 10) < 8) {
+          $obj.prepend(iepanel);
+          $obj.prepend(overlay);
+        }
+        if ($.browser.msie  && parseInt($.browser.version, 10) === 6) {
+          $("#ie-alert-panel").css("background-position","-626px -116px");
+          $obj.css("margin","0");
+        }
+        } else if (support === "ie6") {   // shows the alert msg only in IE6
+          if ($.browser.msie  && parseInt($.browser.version, 10) < 7) {
+            $obj.prepend(iepanel);
+            $obj.prepend(overlay);
+            $("#ie-alert-panel").css("background-position","-626px -116px");
+            $obj.css("margin","0");
+          }
+        }
+      }
+  </script>
 </head>
 <body>
 <div class="page_wrapper">
@@ -43,6 +79,7 @@
       <img src="static/img/banner13.jpg">
       <img src="static/img/banner14.jpg">
       <img src="static/img/banner15.jpg">
+      <img src="static/img/banner16.jpg">
     </div>
   </div>
   <div class="content-wrapper">
@@ -55,30 +92,29 @@
           <div class="faq_content">
             <div class="faq_col">
               <ul>
-                <li><a href="faq.html#faq1">安得帕模拟器是怎样工作的?</a></li>
-                <li><a href="faq.html#faq2">安得帕模拟器对安装空间有什么要求?</a></li>
-                <li><a href="faq.html#faq3">有家庭影院还能装模拟器么?</a></li>
-                <li><a href="faq.html#faq4">装安得帕模拟器大概需要多长时间?</a></li>
-                <li><a href="faq.html#faq5">自动回球和上球系统效果如何?</a></li>
-                <li><a href="faq.html#faq6">你们的高尔夫模拟器推杆系统是怎样的?</a></li>
-                <li><a href="faq.html#faq7">系统里面有无中国著名球场？</a></li>
-                <li><a href="faq.html#faq8">安得帕模拟器系统可以联网打球么?</a></li>
-                <li><a href="faq.html#faq9">安得帕模拟器与其他模拟器比较怎样?</a></li>
-                <li><a href="faq.html#faq10">购买安得帕模拟器,总体流程是?</a></li>
+                <li><a href="faq.html#faq1">安得帕室内高尔夫（模拟器与国外模拟器）对比！</a></li>
+                <li><a href="faq.html#faq2">系统里面有无国外球场？</a></li>
+                <li><a href="faq.html#faq3">安得帕室内高尔夫（模拟器）是如何工作的?</a></li>
+                <li><a href="faq.html#faq4">安得帕室内高尔夫（模拟器）对安装空间有什么要求？</a></li>
+                <li><a href="faq.html#faq5">安装安得帕室内高尔夫（模拟器）大概要多长时间呢？</a></li>
+                <li><a href="faq.html#faq6">自动回球和上球系统效果如何？</a></li>
+                <li><a href="faq.html#faq7">购买安得帕室内高尔夫（模拟器）流程是什么？</a></li>
+                <li><a href="faq.html#faq8">安得帕室内高尔夫模拟系统都有哪些球场?</a></li>
+                <li><a href="faq.html#faq9">安得帕室内高尔夫模拟系统保质期是多久?</a></li>
+                <li><a href="faq.html#faq10">购买交期时间?</a></li>
               </ul>
             </div>
             <div class="faq_col">
               <ul>
-                <li><a href="faq.html#faq11">安得帕模拟器都有哪些球场?</a></li>
-                <li><a href="faq.html#faq12">安得帕摸你系统保质期是多久?</a></li>
-                <li><a href="faq.html#faq13">安得帕摸你系统有哪些配套娱乐设施?</a></li>
-                <li><a href="faq.html#faq14">一般的购买交期多久?</a></li>
-                <li><a href="faq.html#faq15">我怎样购买安得帕模拟器?</a></li>
-                <li><a href="faq.html#faq16">在什么地方可以看到安得帕模拟器?</a></li>
-                <li><a href="faq.html#faq17">红外、平板、雷达、高速摄像区别在哪?</a></li>
-                <li><a href="faq.html#faq18">一套安得帕模拟器的价格是多少?</a></li>
-                <li><a href="faq.html#faq19">安得帕模拟器可以教学么?</a></li>
-                <li><a href="faq.html#faq20">模拟器安装出现问题,怎么解决呢?</a></li>
+                <li><a href="faq.html#faq11">我怎样购买UNDER PAR 安得帕模拟器?</a></li>
+                <li><a href="faq.html#faq12">一套/台UNDER PAR 安得帕室内高尔夫模拟器的价格是多少?</a></li>
+                <li><a href="faq.html#faq13">红外、平板、雷达、高速摄像区别在哪？</a></li>
+                <li><a href="faq.html#faq14">安得帕室内高尔夫（模拟器）可以教学吗？</a></li>
+                <li><a href="faq.html#faq15">在什么地方可以看到安得帕室内高尔夫模拟器？</a></li>
+                <li><a href="faq.html#faq16">安得帕室内高尔夫模拟系统有哪些配套娱乐设施?</a></li>
+                <li><a href="faq.html#faq17">安得帕室内高尔夫（模拟系统）可以全国联网打球吗？</a></li>
+                <li><a href="faq.html#faq18"> 有家庭影院还可以安装室内高尔夫（模拟器）吗？</a></li>
+                <li><a href="faq.html#faq19">模拟器安装后出现问题，怎么解决呢？</a></li>
               </ul>
             </div>
           </div>
@@ -119,8 +155,8 @@ $(function(){
   var imgs = [
     ['1.jpg', '2.jpg', '3.jpg', '4.jpg'],
     ['5.jpg', '6.jpg', '7.jpg', '8.jpg'],
-    ['9.jpg', '10.jpg', '11.jpg', '12.jpg']
-  ];
+    ['9.jpg', '10.jpg', '11.jpg', '12.JPG']
+  ];    
   var index = 1;
   var change = function(){
     var ul_thumbnails = $('ul.thumbnails').html("");
